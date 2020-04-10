@@ -13,7 +13,7 @@ app.use(function (req, res, next) {
 });
 
 app.use("/", function (req, res) {
-  console.log("fetch operation");
+  console.log("fetch initiated");
   fetch(`https://wakatime.com/api/v1/users/poplogics/stats/last_7_days`, {
     headers: {
       Authorization:
