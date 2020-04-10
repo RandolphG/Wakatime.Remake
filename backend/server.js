@@ -16,7 +16,7 @@ app.use("/", function(req, res) {
     fetch(`https://wakatime.com/api/v1/users/poplogics/goals`, {
         headers: {
             Authorization:
-                "Bearer sec_dRB2WSJnqXefOE7PrC8DGzVkEvlLgP4qHVjTzzgLQehTSvqU3svwPi6vRIvG7K3FuC01dKhyYfWlwbeS",
+                "Bearer ",
         },
     })
         .then((response) => {
