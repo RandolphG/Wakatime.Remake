@@ -46,11 +46,13 @@ function App() {
   } = stats;
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <div className="userName">username : {username}</div>
-        <div className="metrics">
+    <div className="app">
+      <header className="app-main">
+        <div className="left-side">
+          <div className="userName">username : {username}</div>
           <div>timezone : {timezone}</div>
+        </div>
+        <div className="right-side">
           <div>daily average : {human_readable_daily_average}</div>
           <div>total : {human_readable_total}</div>
           <div>
