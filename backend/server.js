@@ -16,7 +16,7 @@ app.use("/", async (req, res) => {
   const fetchOptions = {
     headers: {
       Authorization:
-        "Bearer sec_PPj60m3AT3crnWRM9ocQOqDy1QoYePUijNumOhlJR8PVmuyQ9pP3JOiDSHmDmf2NiqY7vK4zV8VI0r6C",
+        "Bearer sec_TfPIP2WjmE8bGFx1Y3gU5uZzbN4e9QlK8AkofHrGCuWqiT5hKqvYtoPhgekieF9nk61RiDRGEOAoNcYK",
     },
   };
   const wakaURL = `https://wakatime.com/api/v1`;
