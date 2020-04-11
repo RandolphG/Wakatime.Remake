@@ -36,6 +36,7 @@ code {
   font-size: calc(2px + 2vmin);
   color: black;
   .left-side {
+    width: 20%;
     padding: 16px;
     .userName{
       border-radius: 4px;
@@ -45,12 +46,97 @@ code {
     }
   }
   .right-side {
+    width: 100%;
+    background: cyan;
     padding: 16px;
     display: flex;
-    flex-direction: column;
-    align-items: baseline;
+    flex-direction: row;
     border-radius: 4px;
     margin-top: 8px;
+    .left{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      .top {
+        background: cornsilk;
+        height: 50%;
+      }
+      .bottom {
+        display: flex;
+        align-items: baseline;
+        flex-direction: row;
+        color: white;
+        padding: 8px;
+        background: firebrick;
+        height: 50%;
+        .projects {
+          background: black;
+          width: 50%;
+          .project-details {
+            border-radius: 2px;
+            padding: 4px;
+            background: darkseagreen;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            margin-bottom: 4px;
+            .details-top {
+              font-size: 0.80rem;
+              background: cadetblue;
+            }
+            .details-bottom {
+              font-size: .74rem;
+              background: chocolate;
+            }
+          }
+        }
+        .ide-browsers {
+          padding: 4px;
+          width: 50%;
+          .ide-browser {
+            display: flex;
+            flex-direction: column;
+            align-items: baseline;
+            .ide-browser-top{
+              font-size: 0.80rem;
+            }
+            .ide-browser-bottom{
+              font-size: 0.74rem;
+            }
+          }
+        }
+      }
+    }
+    .right {
+      display: flex;
+      width: 30%;
+      .middle-side {
+
+        background: black;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        .languages {
+          padding: 4px;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          .language {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            .language-top {
+              font-size: 0.80rem;
+            }
+            .language-bottom {
+              font-size: .74rem;
+            }
+          }
+        }
+      }
+    }
   }
 }
 

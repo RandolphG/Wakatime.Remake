@@ -22,10 +22,12 @@ app.use("/", async (req, res) => {
   const wakaURL = `https://wakatime.com/api/v1`;
   // noinspection JSValidateTypes
   const requests = [
+    // stats
     await fetch(`${wakaURL}/users/poplogics/stats/last_7_days`, fetchOptions)
       .then((res) => res.json())
       .then((data) => data),
     await fetch(
+      // summaries
       `${wakaURL}/users/poplogics/summaries?start=${new Date(
         2020,
         4,
@@ -35,23 +37,13 @@ app.use("/", async (req, res) => {
     )
       .then((res) => res.json())
       .then((data) => data),
+    // projects
     await fetch(`${wakaURL}/users/poplogics/projects`, fetchOptions)
       .then((res) => res.json())
       .then((data) => data),
   ];
 
   res.json(requests);
-  console.log(requests);
-  // Promise.all(requests).then(async (values) => {
-  //   console.log(values);
-  // });
-
-  /*.then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      return res.json(data);
-    });*/
 });
 
 app.listen(3001, () => console.log("listening from port 3001"));
