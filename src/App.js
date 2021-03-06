@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "./App.scss";
+import "./App.css";
 import { Avatar, Badge } from "antd";
 import "antd/dist/antd.css";
 import UserOutlined from "@ant-design/icons/lib/icons/UserOutlined";

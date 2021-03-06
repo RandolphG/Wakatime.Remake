@@ -1,5 +1,5 @@
 {
-  "name": "time-sync-too",
+  "name": "wakatime-statistics",
   "version": "0.1.0",
   "private": true,
   "main": "public/electron.js",
@@ -14,7 +14,6 @@
     "electron-is-dev": "^1.2.0",
     "framer": "^1.1.7",
     "framer-motion": "^1.10.3",
-    "node-sass": "^4.13.1",
     "prettier": "^2.0.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -36,7 +35,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "electron-dev": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\""
+    "electron": "concurrently \"cross-env BROWSER=none npm start\" \"wait-on http://localhost:3000 && electron .\""
   },
   "eslintConfig": {
     "extends": "react-app"
