@@ -1,6 +1,6 @@
 # Wakatime Statistics
 
-![Wakatime](https://github.com/RandolphG/Time-Sync-Too-Electron-React/blob/master/public/_wakatime.gif?raw=true)
+![Wakatime](https://github.com/RandolphG/Time-Sync-Too-Electron-React-/blob/master/public/_wakatime.gif?raw=true)
 
 ### Installation process :
 
